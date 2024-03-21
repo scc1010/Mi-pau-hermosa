@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤¿Quieres ser mi novia?❤</title>
+    <style>
+        .body {
+          background-color: crimson;
+          text-align: center;
+          
+        }
+
+        .body__title {
+            color: yellow;
+            font-style: italic;
+            font-size: xx-large;
+        }
+
+        .body__img {
+            width: 50%;
+            border-radius: 80%;
+        }
+
+        .button__yes {
+            background-color: white;
+            padding: 25px 40px; 
+            border-radius: 50%;
+            
+
+        }
+    </style>
+</head>
+
+<body class="body">
+<h1 class="body__title">❤¿Quieres ser mi novia?❤</h1>
+<img src="https://i.pinimg.com/originals/73/2e/7a/732e7ae39df98625cc5b5646aa8ab2fb.png" 
+alt="Michitos" class="body__img"/>
+<button id="yes" class="button__yes">💖Sííí💖</button>
+<button id="no" class="button__no">No😭💔</button>
+
+<script>
+    const vutonSi = document.getElementById('yes');
+    const vutonNo = document.getElementById('no');
+
+    const SomosNovios = () => {
+        alert('💞Ahora❤️‍🔥somos NOVIOS💞');
+        alert('❤️🩷Eres lo mejor que le ha pasado a mi VIDA❤️🩷');
+        location.href = 'https://www.youtube.com/watch?v=WgTMeICssXY&list=PLTJSKWuKihi3P7EnU_nez8b3blLEcDUd9&index=5';
+        }
+
+        const EvitarQueSeRompaMiCorazon = () => {
+            vutonNo.style.position = 'absolute';
+            vutonNo.style.top = (Math.random()* window.innerHeight) + 'px';
+            vutonNo.style.left = (Math.random()* window.innerWidth) + 'px'; 
+            }
+
+            vutonSi.addEventListener('click', SomosNovios); 
+            vutonNo.addEventListener('mouseover', EvitarQueSeRompaMiCorazon)
+</script>
+
+</body>
+
+</html>
